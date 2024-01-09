@@ -8,40 +8,101 @@
 </head>
 
 <body>
-    <form action="index.php" method="post">
+    <form action="index.php" method="post" enctype="multipart/form-data">
         <!-- get - it is used to send data to the server in the url to send small amount of data and it is not secure and it is limited to 2000 characters and it is visible to everyone in the url and it is not cached and it is used to retrieve data from the server and it is the default method of form submission  -->
         <!-- post - it is used to send data to the server in the http message body to send large amount of data and it is secure and it is not limited to 2000 characters and it is not visible to everyone in the url and it is cached and it is used to send data to the server and it is not the default method of form submission -->
+        <!-- enctype - it is used to specify the encoding type of the form data when the form is submitted to the server -->
+        <!-- multipart/form-data - it is used to send binary data to the server -->
+        <!-- application/x-www-form-urlencoded - it is used to send text data to the server -->
+        <!-- text/plain - it is used to send plain text data to the server -->
+        <!-- method - it is used to specify the method of form submission -->
+        <!-- action - it is used to specify the url of the server to which the form data is sent -->
+        <!-- name - it is used to specify the name of the form -->
+        <!-- id - it is used to specify the id of the form -->
+        <!-- placeholder - it is used to specify the placeholder text of the input -->
+        <!-- minlength - it is used to specify the minimum length of the input -->
+        <!-- maxlength - it is used to specify the maximum length of the input -->
+        <!-- required - it is used to specify that the input is required -->
+        <!-- pattern - it is used to specify the pattern of the input -->
+        <!-- value - it is used to specify the value of the input -->
+        <!-- accept - it is used to specify the file types that the server accepts -->
+        <!-- cols - it is used to specify the number of columns in the textarea -->
+
+        <label for="name">name :</label>
         <label for="username">username :</label>
         <input type="text" id="username" placeholder="username here" minlength="6" maxlength="16" required>
+        
         <br>
+        <!-- input text - it is used to get single line text input from the user  -->
         <label for="password">password :</label>
-        <input type="password" id="password minlength=" 6" maxlength="12" placeholder="write your password">
+        <input type="password" id="password " minlength=" 6" maxlength="12" placeholder="write your password">
+        <!-- INPUT PASSWORD - it is used to get password input from the user and it is not visible to the user -->
+        
         <br>
         <label for="email">email add :</label>
         <input type="email" id="email" placeholder="write your email">
+        <!-- input email - it is used to get email input from the user and it is used to validate the email address -->
+        
         <br>
         <label for="phone">phone no :</label>
         <input type="tel" id="phone" placeholder="write your phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <!-- input tel - it is used to get phone number input from the user and it is used to validate the phone number  -->
+
+        
         <br>
         <label for="bday">birth date :</label>
         <input type="date" id="bday" placeholder="birthdate">
+        <!-- input date - it is used to get date input from the user and it is used to validate the date   -->
+        
         <br>
         <label for="quantity ">quantity :</label>
-        <input type="number" id="quantity" min="0" max="99"  value="1" placeholder="quantity">
+        <input type="number" id="quantity" min="0" max="99" value="1" placeholder="quantity">
+        <!-- input number - it is used to get number input from the user and it is used to validate the number -->
+        
         <br>
         <label for="title">title :</label>
-        
+
         <input type="radio" id="MR." value="MR." name="title">
         <label for="MR.">MR. </label>
         <input type="radio" id="MS." value="MS." name="title">
         <label for="MR.">MS.</label>
         <input type="radio" id="PHD." value="PHD." name="title">
         <label for="PHD">PHD.</label>
+        <!-- input radio - it is used to get radio input from the user and it is used to validate the radio input -->
+        
         <br>
+        <label for="payment">payment</label>
+        <select id="payment">
 
-        <input type="reset"><br>
+            <option value="visa">visa</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="upi">upi</option>
+            <option value="netbank">netbank</option>
 
+        </select>
+        <!-- select - it is used to get select input from the user and it is used to validate the select input -->
+        
+        <br>
+        <label for="subscribe">subscribe :</label>
+        <input type="checkbox" id="subscribe">
+        <!-- input checkbox - it is used to get checkbox input from the user and it is used to validate the checkbox input -->
+        
+        <br>
+        <label for="comment">comment :</label>
+        <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+        <!-- textarea - it is used to get textarea input from the user and it is used to validate the textarea input -->
+        
+        <br>
+        <label for="file">file</label>
+        <input type="file" id="file" accept="image/png , image/jpeg">
+        <!-- input file - it is used to get file input from the user and it is used to validate the file input -->
+        
+        <br>
+        <input type="reset">
+        <br>
+        <!-- input reset - it is used to reset the form -->
         <input type="submit">
+        <!-- input submit - it is used to submit the form  -->
     </form>
 </body>
 
