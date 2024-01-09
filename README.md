@@ -3,6 +3,7 @@
 This README provides a comprehensive overview of HTML, covering various elements, tags, and concepts.
 
 ## Table of Contents
+
 - [HTML](#html)
 - [HTML Elements](#html-elements)
 - [HTML Tags](#html-tags)
@@ -98,6 +99,7 @@ This README provides a comprehensive overview of HTML, covering various elements
   - [HTML Progress](#html-progress)
 
 Feel free to ask for more information or specify particular topics you'd like to cover!
+
 ## HTML
 
 HTML (Hypertext Markup Language) is a standard markup language for creating web documents (web pages). It is used to structure content on the web, defining elements and their relationships.
@@ -107,7 +109,7 @@ HTML (Hypertext Markup Language) is a standard markup language for creating web 
 An HTML element is composed of a start tag, some content, and an end tag. Elements may also have attributes that provide additional information.
 
 ```html
-<tagname attribute="value">Content goes here...</tagname>
+<tagname> attribute="value">Content goes here...</tagname>
 ```
 
 ## HTML Tags
@@ -133,13 +135,13 @@ The basic structure of an HTML page includes the `<html>`, `<head>`, and `<body>
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Page Title</title>
-</head>
-<body>
-  <h1>My First Heading</h1>
-  <p>My first paragraph.</p>
-</body>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+  </body>
 </html>
 ```
 
@@ -175,7 +177,7 @@ Hyperlinks are created using the `<a>` tag.
 Images are displayed using the `<img>` tag. Attributes such as `src`, `alt`, `width`, and `height` are commonly used.
 
 ```html
-<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142" />
 ```
 
 ## HTML Buttons
@@ -234,10 +236,10 @@ Forms are created with the `<form>` tag, incorporating various input types for u
 
 ```html
 <form>
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname">
+  <label for="fname">First name:</label><br />
+  <input type="text" id="fname" name="fname" /><br />
+  <label for="lname">Last name:</label><br />
+  <input type="text" id="lname" name="lname" />
 </form>
 ```
 
@@ -246,7 +248,10 @@ Forms are created with the `<form>` tag, incorporating various input types for u
 An iframe is used to embed another webpage within the current page.
 
 ```html
-<iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials"></iframe>
+<iframe
+  src="https://www.w3schools.com"
+  title="W3Schools Free Online Web Tutorials"
+></iframe>
 ```
 
 ## HTML Colors
@@ -266,24 +271,22 @@ CSS (Cascading Style Sheets) is used to style HTML elements. Styles can be appli
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-body {
-  background-color: linen;
-}
+  <head>
+    <style>
+      body {
+        background-color: linen;
+      }
 
-h1 {
-  color: maroon;
-  margin-left: 40px;
-}
-</style>
-</head>
-<body>
-
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-
-</body>
+      h1 {
+        color: maroon;
+        margin-left: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+  </body>
 </html>
 ```
 
@@ -294,16 +297,14 @@ JavaScript is the programming language of HTML and the Web. It enhances interact
 ```html
 <!DOCTYPE html>
 <html>
-<body>
+  <body>
+    <h1>My First Web Page</h1>
+    <p>My First Paragraph</p>
 
-<h1>My First Web Page</h1>
-<p>My First Paragraph</p>
-
-<script>
-document.write("Hello World!")
-</script>
-
-</body>
+    <script>
+      document.write("Hello World!");
+    </script>
+  </body>
 </html>
 ```
 
@@ -314,15 +315,11 @@ File paths describe the location of files in a website's folder structure, used 
 ```html
 <!DOCTYPE html>
 <html>
-<body>
-
-<p><a href="/html/default.asp">HTML Tutorial</a></p>
-<p><a href="/css/default.asp">CSS Tutorial</a></p>
-<p><a href="/js/default.asp">JavaScript Tutorial</a
-
-></p>
-
-</body>
+  <body>
+    <p><a href="/html/default.asp">HTML Tutorial</a></p>
+    <p><a href="/css/default.asp">CSS Tutorial</a></p>
+    <p><a href="/js/default.asp">JavaScript Tutorial</a></p>
+  </body>
 </html>
 ```
 
@@ -333,15 +330,13 @@ The `<head>` element contains metadata and is placed between the `<html>` and `<
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
-
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
-</body>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+  </body>
 </html>
 ```
 
@@ -438,26 +433,24 @@ HTML classes are used to group HTML elements together. The HTML class attribute 
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-.city {
-  background-color: tomato;
-  color: white;
-  border: 2px solid black;
-  margin: 20px;
-  padding: 20px;
-}
-</style>
-</head>
-<body>
+  <head>
+    <style>
+      .city {
+        background-color: tomato;
+        color: white;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
 
-<h2 class="city">London</h2>
-<p>London is the capital of England.</p>
-
-<h2 class="city">Paris</h2>
-<p>Paris is the capital of France.</p>
-
-</body>
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>
+  </body>
 </html>
 ```
 
@@ -468,20 +461,18 @@ The HTML id attribute is used to specify a unique id for an HTML element. The va
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-#para1 {
-  text-align: center;
-  color: red;
-}
-</style>
-</head>
-<body>
-
-<h1>This is a heading</h1>
-<p id="para1">This is a paragraph.</p>
-
-</body>
+  <head>
+    <style>
+      #para1 {
+        text-align: center;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is a heading</h1>
+    <p id="para1">This is a paragraph.</p>
+  </body>
 </html>
 ```
 
@@ -497,7 +488,6 @@ Certainly! Let's continue adding more content to cover additional aspects of HTM
 
 ---
 
-
 ## HTML Multimedia
 
 ### HTML Audio
@@ -506,7 +496,7 @@ Embedding audio is done with the `<audio>` tag. You can use attributes like `con
 
 ```html
 <audio controls>
-  <source src="audio.mp3" type="audio/mp3">
+  <source src="audio.mp3" type="audio/mp3" />
   Your browser does not support the audio tag.
 </audio>
 ```
@@ -517,7 +507,7 @@ Similarly, video content is added with the `<video>` tag. Specify the source and
 
 ```html
 <video width="320" height="240" controls>
-  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
 ```
@@ -529,7 +519,7 @@ Similarly, video content is added with the `<video>` tag. Specify the source and
 Embedding external content like maps or multimedia can be achieved using the `<embed>` tag.
 
 ```html
-<embed type="application/pdf" src="document.pdf" width="600" height="400">
+<embed type="application/pdf" src="document.pdf" width="600" height="400" />
 ```
 
 ### HTML Object
@@ -538,7 +528,7 @@ The `<object>` tag provides another way to embed external content, and it allows
 
 ```html
 <object data="movie.mp4" width="400" height="300">
-  <embed src="movie.mp4" width="400" height="300">
+  <embed src="movie.mp4" width="400" height="300" />
 </object>
 ```
 
@@ -615,12 +605,12 @@ In addition to text inputs, HTML supports various input types like checkboxes, r
 
 ```html
 <form>
-  <input type="text" name="username" placeholder="Username"><br>
-  <input type="password" name="password" placeholder="Password"><br>
-  <input type="checkbox" name="subscribe" value="subscribe"> Subscribe<br>
-  <input type="radio" name="gender" value="male"> Male
-  <input type="radio" name="gender" value="female"> Female<br>
-  <input type="date" name="birthdate">
+  <input type="text" name="username" placeholder="Username" /><br />
+  <input type="password" name="password" placeholder="Password" /><br />
+  <input type="checkbox" name="subscribe" value="subscribe" /> Subscribe<br />
+  <input type="radio" name="gender" value="male" /> Male
+  <input type="radio" name="gender" value="female" /> Female<br />
+  <input type="date" name="birthdate" />
 </form>
 ```
 
@@ -630,9 +620,15 @@ Use the `required` attribute for form fields and the `pattern` attribute for cus
 
 ```html
 <form>
-  <input type="text" name="username" placeholder="Username" required><br>
-  <input type="password" name="password" placeholder="Password" required pattern=".{6,}">
-  <input type="submit" value="Submit">
+  <input type="text" name="username" placeholder="Username" required /><br />
+  <input
+    type="password"
+    name="password"
+    placeholder="Password"
+    required
+    pattern=".{6,}"
+  />
+  <input type="submit" value="Submit" />
 </form>
 ```
 
@@ -643,8 +639,8 @@ Use the `required` attribute for form fields and the `pattern` attribute for cus
 The `<meta>` tag provides metadata about the HTML document, such as character set and viewport settings.
 
 ```html
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 ```
 
 ### HTML Base
@@ -652,9 +648,9 @@ The `<meta>` tag provides metadata about the HTML document, such as character se
 The `<base>` tag specifies a base URL/target for all relative URLs in a document.
 
 ```html
-<base href="https://www.example.com/">
-<a href="page.html">Link to Page</a>
+<base href="https://www.example.com/" /> <a href="page.html">Link to Page</a>
 ```
+
 Certainly! Let's continue with more content, covering additional HTML concepts and features:
 
 ---
@@ -693,7 +689,7 @@ Additional attributes for the `<audio>` tag, like `autoplay` and `loop`, control
 
 ```html
 <audio controls autoplay loop>
-  <source src="audio.mp3" type="audio/mp3">
+  <source src="audio.mp3" type="audio/mp3" />
   Your browser does not support the audio tag.
 </audio>
 ```
@@ -704,7 +700,7 @@ Similarly, the `<video>` tag can have attributes such as `autoplay`, `controls`,
 
 ```html
 <video width="320" height="240" controls autoplay loop>
-  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
 ```
@@ -716,7 +712,7 @@ Similarly, the `<video>` tag can have attributes such as `autoplay`, `controls`,
 Make images responsive using the `max-width` style property.
 
 ```html
-<img src="responsive.jpg" alt="Responsive Image" style="max-width:100%;">
+<img src="responsive.jpg" alt="Responsive Image" style="max-width:100%;" />
 ```
 
 ### HTML Responsive Tables
@@ -745,7 +741,7 @@ Use the `<figure>` and `<figcaption>` tags to provide accessible captions for im
 
 ```html
 <figure>
-  <img src="accessible.jpg" alt="Accessible Image">
+  <img src="accessible.jpg" alt="Accessible Image" />
   <figcaption>Image description for accessibility.</figcaption>
 </figure>
 ```
@@ -813,13 +809,13 @@ Similar to local storage but limited to a session. Data is cleared when the sess
 The `<datalist>` element provides a predefined list of options for input elements.
 
 ```html
-<input list="browsers" name="browser" id="browser">
+<input list="browsers" name="browser" id="browser" />
 <datalist id="browsers">
-  <option value="Chrome">
-  <option value="Firefox">
-  <option value="Safari">
-  <option value="Edge">
-  <option value="Opera">
+  <option value="Chrome"></option>
+  <option value="Firefox"></option>
+  <option value="Safari"></option>
+  <option value="Edge"></option>
+  <option value="Opera"></option>
 </datalist>
 ```
 
@@ -838,6 +834,7 @@ The `<progress>` element represents the completion progress of a task.
 ```html
 <progress value="50" max="100">50%</progress>
 ```
+
 Certainly! Let's continue exploring more HTML concepts and features:
 
 ---
@@ -851,7 +848,12 @@ Certainly! Let's continue exploring more HTML concepts and features:
 The `<canvas>` element provides a drawable region on the page, allowing for dynamic graphics and animations.
 
 ```html
-<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;"></canvas>
+<canvas
+  id="myCanvas"
+  width="200"
+  height="100"
+  style="border:1px solid #000;"
+></canvas>
 <script>
   var canvas = document.getElementById("myCanvas");
   var ctx = canvas.getContext("2d");
@@ -866,7 +868,7 @@ The `<audio>` tag allows embedding audio files on a webpage.
 
 ```html
 <audio controls>
-  <source src="audio.mp3" type="audio/mp3">
+  <source src="audio.mp3" type="audio/mp3" />
   Your browser does not support the audio element.
 </audio>
 ```
@@ -877,7 +879,7 @@ Similarly, the `<video>` tag is used for embedding videos.
 
 ```html
 <video width="320" height="240" controls>
-  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
 ```
@@ -892,8 +894,8 @@ Group related form elements using `<fieldset>` and add a description with `<lege
 <form>
   <fieldset>
     <legend>Contact Information</legend>
-    Name: <input type="text"><br>
-    Email: <input type="text"><br>
+    Name: <input type="text" /><br />
+    Email: <input type="text" /><br />
   </fieldset>
 </form>
 ```
@@ -921,8 +923,8 @@ The `<output>` element represents the result of a calculation or user action.
 
 ```html
 <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
-  <input type="range" id="a" value="50">+
-  <input type="number" id="b" value="50">
+  <input type="range" id="a" value="50" />+
+  <input type="number" id="b" value="50" />
   =<output name="result" for="a b">100</output>
 </form>
 ```
@@ -945,7 +947,12 @@ The Geolocation API provides location information of the device.
   }
 
   function showPosition(position) {
-    alert("Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude);
+    alert(
+      "Latitude: " +
+        position.coords.latitude +
+        "<br>Longitude: " +
+        position.coords.longitude
+    );
   }
 </script>
 ```
@@ -955,44 +962,49 @@ The Geolocation API provides location information of the device.
 The Drag and Drop API enables dragging elements across the page.
 
 ```html
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-  <style>
-    #div1 {
-      width: 350px;
-      height: 70px;
-      padding: 10px;
-      border: 1px solid #aaaaaa;
-    }
-  </style>
-  <script>
-    function allowDrop(ev) {
-      ev.preventDefault();
-    }
+  <head>
+    <style>
+      #div1 {
+        width: 350px;
+        height: 70px;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+      }
+    </style>
+    <script>
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
 
-    function drag(ev) {
-      ev.dataTransfer.setData("text", ev.target.id);
-    }
+      function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+      }
 
-    function drop(ev) {
-      ev.preventDefault();
-      var data = ev.dataTransfer.getData("text");
-      var draggedElement = document.getElementById(data);
-      var clone = draggedElement.cloneNode(true);
-      ev.target.appendChild(clone);
-    }
-  </script>
-</head>
-<body>
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        var draggedElement = document.getElementById(data);
+        var clone = draggedElement.cloneNode(true);
+        ev.target.appendChild(clone);
+      }
+    </script>
+  </head>
+  <body>
+    <p>Drag the W3Schools image into the rectangle:</p>
 
-<p>Drag the W3Schools image into the rectangle:</p>
-
-<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-<br>
-<img id="drag1" src="w3schools.jpg" draggable="true" ondragstart="drag(event)" width="336" height="69">
-
-</body>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br />
+    <img
+      id="drag1"
+      src="w3schools.jpg"
+      draggable="true"
+      ondragstart="drag(event)"
+      width="336"
+      height="69"
+    />
+  </body>
 </html>
 ```
 
@@ -1014,9 +1026,14 @@ WebSockets provide full-duplex communication channels over a single, long-lived 
 
   socket.onclose = function (event) {
     if (event.wasClean) {
-      alert('Connection closed cleanly, code=' + event.code + ', reason=' + event.reason);
+      alert(
+        "Connection closed cleanly, code=" +
+          event.code +
+          ", reason=" +
+          event.reason
+      );
     } else {
-      alert('Connection died');
+      alert("Connection died");
     }
   };
 
@@ -1025,7 +1042,5 @@ WebSockets provide full-duplex communication channels over a single, long-lived 
   };
 </script>
 ```
- END OF FILES
 
-
-
+END OF FILES
