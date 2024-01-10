@@ -104,6 +104,10 @@ Feel free to ask for more information or specify particular topics you'd like to
 
 HTML (Hypertext Markup Language) is a standard markup language for creating web documents (web pages). It is used to structure content on the web, defining elements and their relationships.
 
+![html-tags-list](https://github.com/Mmustafa-772002/Html/assets/116543187/e1c0400f-c46f-48ab-ae46-aba74d9d0c1b)
+
+
+
 ## HTML Elements
 
 An HTML element is composed of a start tag, some content, and an end tag. Elements may also have attributes that provide additional information.
